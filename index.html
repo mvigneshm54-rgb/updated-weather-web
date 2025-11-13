@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather Forecast Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">🌍 Weather Forecast Pro</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name..." />
+      <button onclick="getWeather()">Search</button>
+      <button onclick="getLocationWeather()">📍 Current</button>
+    </div>
+
+    <div class="weather-box" id="weatherBox">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" src="" alt="Weather Icon" />
+      <h3 id="temperature"></h3>
+      <p id="description"></p>
+
+      <div class="details">
+        <p id="humidity"></p>
+        <p id="wind"></p>
+        <p id="pressure"></p>
+        <p id="visibility"></p>
+        <p id="sunrise"></p>
+        <p id="sunset"></p>
+      </div>
+    </div>
+
+    <div class="forecast" id="forecast">
+      <h3>5-Day Forecast</h3>
+      <div id="forecastCards" class="forecast-cards"></div>
+    </div>
+  </div>
+
+  <footer>Developed by <strong>VIGNESH</strong> | Powered by OpenWeather API</footer>
+  <script src="script.js"></script>
+</body>
+</html>
+
